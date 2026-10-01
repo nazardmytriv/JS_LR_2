@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Завдання 1</title>
+</head>
+<body>
+  <p>Натисніть <strong>F12</strong>, щоб відкрити консоль. Пояснення також виведено на екран.</p>
+  <script>
+    let userName = "Назар"; // глобальна змінна
+
+    if (true) {
+      let userName = prompt("Введіть інше ім'я для блоку if:");
+      console.log("В if:", userName);
+      document.write("В if: " + userName + "<br>");
+    }
+
+    console.log("Глобальна змінна:", userName);
+    document.write("Глобальна змінна: " + userName + "<br><br>");
+    
+    document.write("<strong>Пояснення:</strong> Змінна let має блочну область видимості. Та, що створена всередині if, існує лише там і не замінює глобальну змінну 'Назар'.");
+  </script>
+</body>
+</html>
